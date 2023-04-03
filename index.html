@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gorjetas - Calcule a sua gorjeta facilmente</title>
+    <meta name="description" content="Use nossa calculadora de gorjetas para determinar a porcentagem certa e dividir a conta de forma justa.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <section class="container">
+        <div class="header">
+          <h1 class="title-header">Calculadora de Gorjetas</h1>
+          
+        </div>
+        <div class="body-content" id="body-content">
+          <form class="tipsForm" id="tipsForm">
+            <label for="bill">
+              <p>Total da conta</p>
+            </label>
+            <p>
+              <input type="number" placeholder="100" name="bill" id="bill" class="formInput" required>
+            </p>
+            <label for="serviceQual">
+              <p>Qualidade do serviço</p>
+            </label>
+            <p>
+              <input type="number" name="porcent" id="porcent" class="formInput" required>
+            </p>
+            <label for="people">
+              <p>Número de pessoas</p>
+            </label>
+            <p>
+              <input type="number" placeholder="1" name="people" id="people" class="formInput" required>
+            </p>
+            <button type="submit" class="formSubmit" id="submit">Calcular</button>
+          </form>
+          <div id="totalTip">
+    
+          </div>
+        </div>
+      </section>
+  </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
