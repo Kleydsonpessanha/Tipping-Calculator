@@ -12,7 +12,7 @@ O usuário insere o valor da conta na primeira caixa de entrada e, em seguida, s
 # Como Usar
 Basta acessar o site do projeto.
 
-# Melhorias
+# Melhorias Futuras
 Algumas possíveis melhorias para este projeto podem incluir:
 
 Adicionar uma opção para dividir a conta entre várias pessoas.
