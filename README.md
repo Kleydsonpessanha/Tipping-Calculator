@@ -2,9 +2,9 @@
 Este é um simples projeto de calculadora de gorjetas em JavaScript. A calculadora permite ao usuário calcular a gorjeta e o valor total da conta com base na porcentagem de gorjeta selecionada e no valor da conta.
 
 # Tecnologias Utilizadas
-HTML
-CSS
-JavaScript
+- HTML
+- CSS
+- JavaScript
 
 # Funcionamento
 O usuário insere o valor da conta na primeira caixa de entrada e, em seguida, seleciona a porcentagem de gorjeta que deseja dar. O valor da gorjeta e o valor total da conta são exibidos automaticamente.
