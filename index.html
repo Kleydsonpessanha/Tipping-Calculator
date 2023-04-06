@@ -6,43 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Gorjetas - Calcule a sua gorjeta facilmente</title>
     <meta name="description" content="Use nossa calculadora de gorjetas para determinar a porcentagem certa e dividir a conta de forma justa.">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/css/style.css">
+
+    <!-- Poppins font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div id="result-modal" class="modal-result">
+    <h1 class="modal-title">Gorjetas</h1>
+    <span id="total-value"></span>
+    <button class="modal-button">FECHAR</button>
+  </div>
   <main>
-    <section class="container">
-        <div class="header">
-          <h1 class="title-header">Calculadora de Gorjetas</h1>
-          
+    </div>
+    <div class="card-header">
+      <h1>Calculadora de Gorjetas</h1>
+    </div>
+    <div class="card-body">
+      <form id="tipsForm">
+        <div>
+          <label for="">Valor da conta</label>
+          <input id="bill-value" type="number" placeholder="R$" max="1000" min="1" maxlength="4" required>
         </div>
-        <div class="body-content" id="body-content">
-          <form class="tipsForm" id="tipsForm">
-            <label for="bill">
-              <p>Total da conta</p>
-            </label>
-            <p>
-              <input type="number" placeholder="100" name="bill" id="bill" class="formInput" required>
-            </p>
-            <label for="serviceQual">
-              <p>Qualidade do serviço</p>
-            </label>
-            <p>
-              <input type="number" name="porcent" id="porcent" class="formInput" required>
-            </p>
-            <label for="people">
-              <p>Número de pessoas</p>
-            </label>
-            <p>
-              <input type="number" placeholder="1" name="people" id="people" class="formInput" required>
-            </p>
-            <button type="submit" class="formSubmit" id="submit">Calcular</button>
-          </form>
-          <div id="totalTip">
-    
-          </div>
+        <div>
+          <label for="">Qualidade do serviço</label>
+          <input id="services-quality-value" type="number" placeholder="1 (Péssimo) - 10 (Ótimo)" max="10" min="1" maxlength="2" required>
         </div>
-      </section>
+        <div>
+          <label for="">Pessoas envolvidas</label>
+          <input id="peoples-value" type="number" placeholder="1" max="50" min="1" maxlength="2" required>
+        </div>
+        <button id="calculate-result" type="submit">CALCULAR</button>
+      </form>
+    </div>
   </main>
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

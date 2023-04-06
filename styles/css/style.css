@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #807ece;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .modal-result {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  background: rgba(45, 42, 55, 0.9333333333);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1.5px solid #ebebeb;
+  gap: 1rem;
+}
+body .modal-result .modal-title {
+  color: #fff;
+  font-weight: 600;
+}
+body .modal-result span {
+  color: #975dfa;
+  font-weight: 400;
+}
+body .modal-result .modal-button {
+  width: 50%;
+  height: 6vh;
+  border: solid 1.5px #ff4f55;
+  background-color: transparent;
+  color: #ff4f55;
+  border-radius: 6px;
+  transition: 0.35s all ease-in-out;
+}
+body .modal-result .modal-button:hover {
+  color: #fff;
+  background-color: #ff4f55;
+}
+body main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  flex-direction: column;
+  filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.2));
+}
+@media screen and (max-width: 576px) {
+  body main {
+    width: 90vw;
+  }
+}
+body main .card-header {
+  background-color: #975dfa;
+  width: 100%;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1.5px solid rgba(0, 0, 0, 0.3921568627);
+}
+body main .card-header h1 {
+  color: #2d2a37;
+  font-weight: 600;
+}
+@media screen and (max-width: 576px) {
+  body main .card-header h1 {
+    white-space: nowrap;
+    font-size: 23px;
+  }
+}
+body main .card-body {
+  background-color: #2d2a37;
+  width: 100%;
+  padding: 20px;
+  border: 1.5px solid rgba(0, 0, 0, 0.3921568627);
+}
+@media screen and (max-width: 576px) {
+  body main .card-body {
+    padding: 10px;
+  }
+}
+body main .card-body form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .card-body form div {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  margin: 10px;
+  width: 100%;
+  font-size: small;
+}
+body main .card-body form div input {
+  width: 60%;
+  height: 6vh;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  padding: 7px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+@media screen and (max-width: 576px) {
+  body main .card-body form div input {
+    width: 75%;
+  }
+}
+body main .card-body form div input:invalid {
+  border: red solid 1.7px;
+}
+body main .card-body form div input:valid {
+  border: green solid 1.7px;
+}
+body main .card-body form div label {
+  color: rgba(255, 255, 255, 0.6549019608);
+  width: 60%;
+  text-align: start;
+}
+@media screen and (max-width: 576px) {
+  body main .card-body form div label {
+    width: 75%;
+    font-size: 20px;
+  }
+}
+body main .card-body form button[type=submit] {
+  width: 70%;
+  height: 6vh;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #7f45e2;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.35s all ease-in-out;
+}
+body main .card-body form button[type=submit]:hover {
+  background-color: #6431bb;
+}
+
+/*# sourceMappingURL=style.css.map */
